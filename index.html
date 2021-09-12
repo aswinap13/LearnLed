@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LearnLed Consultants</title>
+
     <!--Bootstrap Css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Fa Icon-->
@@ -18,178 +19,233 @@
     <!--Animation Data-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--Custom Css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!--Web Body-->
 
-
-    <div class="container-fluid">
-
-        <header class="fixed-top d-flex align-items-center">
-            <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top" role="navigation">
-                    <a class="navbar-brand col-6 col-sm-4 col-md-3 col-lg-2" href="#">
-                        <img class="align-middle logo me-auto" src="/images/logoImg.png" alt="LearnLed Consultants" height="100%" width="100%">
+<div class="container-fluid">
+    
+<!-- Header -->
+        <header class="fixed-top d-flex align-items-center bg-dark">
+            <nav class="navbar navbar-expand-md navbar-inverse navbar-fixed-top" role="navigation">
+                    <a class="navbar-brand col-6 col-sm-4 col-md-3 col-lg-2" id="scrollToTopBtn" >
+                        <img class="logo align-middle me-auto" src="/images/logoImg.png"alt="LearnLed Consultants" height="100%" width="100%">
                     </a>
-                    <button class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="btn navbar-toggler navbar-btn text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fas fa-bars"></i>
                     </button>
+
+                <!--Collapse Content-->
                 <div class="collapse navbar-collapse col-md-6 col-lg-4" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a class="nav-link" href="#abroad">Study Abroad</a></li>
-                        <li class="nav-item"><a class="nav-link" href=".page2">Study In India</a></li>
-                        <li class="nav-item"><a class="nav-link" href=".services">Scholarships</a></li>
-                        <li class="nav-item"><a class="nav-link" href=".team">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href=".contactUs">Contact Us</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="/abroad.html">Study Abroad</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/studyIn.html">Study In India</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/scholarships.html">Scholarships</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/aboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contactUs">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
+<!-- End Header -->
 
-        <div class="container">
-
-            <div class="row">
-
-                <div class="column">
-                  <div class="jumbotron bg-cover text-white" style="background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(images/bb1.jpg)">
-                    <div class="container4 col-12 col-sm-8">
-                        <h1 class="display-4 animate__animated animate__slideInLeft" style="font-weight: 600;">We Provides Best<BR> Guidance And Counselling!</h1>
-                        <br>
-                        <p class=" animate__animated animate__slideInLeft">Preparing Students For Successful Future.</p>
-                        <hr class="my-4">
-                        
-                        <a class="btn btn-dark btn-md animate__animated animate__slideInLeft" href="#" role="button">Learn more</a>
+<!-- Main -->
+        <main id="main">
+            
+            <!-- Hero Landing-->
+            <section id="hero" class="d-flex align-items-center">
+                
+                <div class="row text-white">
+                    <div class="container1 col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="textIn">
+                                <h1 class="display-4 animate__animated animate__slideInLeft" style="font-weight: 600;">We Provides Best<BR> Guidance And Counselling!</h1>
+                                <br>
+                                <p class=" animate__animated animate__slideInLeft">Preparing Students For Successful Future.</p>
+                                <hr class="my-4">
+                                
+                                <a class="btn btn-primary btn-md animate__animated animate__slideInLeft" href="#contactUs" role="button"><span>Learn more  </span></a>
+                        </div>
                     </div>
-                    <div class="container3 col-0 col-sm-2"></div>
-                  </div>
-                    
                 </div>
-                <div class="column col-12 col-md-12 col-lg-12" id="abroad">
-                    
-                    <div class="row">
 
-                        <i class="fas fa-school text-light text-center"></i>
-                        <h2 class="text-light text-center">We Assist For Admission In</h2>
+            </section>
 
-                        <div class="card col-12 col-md-6 col-lg-3 text-light mb-3" data-aos="fade-up" style="max-width: 18rem;">
-                            <img class="card-img" src="images/sy.png" alt="Card image">
-                            <div class="card-img-overlay">
+            <!-- Abroad -->
+            <section id="abroad" class="abroad">
+
+                <div class="container row">
+
+                        <!-- Abroad Header -->
+                        <h2 class="text-dark text-center mt-4 mb-4">
+                            <i class="fas fa-school text-dark text-center"></i>&nbsp; We Assist For Admission In
+                        </h2>
+                        
+                        <!-- Abroad Card*3 -->
+                        <div class="card col-12 col-md-6 col-lg-3" style="max-width: 18rem;">
+                            <img class="card-img" src="/images/sy.png" alt="Card image">
+                            <div class="card-img-overlay text-light">
                                 <h2 class="card-title text-center">University of Sydney</h2>
                             </div>
                         </div>
 
-                        <div class="card  col-12 col-md-6 col-lg-3 text-light mb-3" data-aos="fade-up" style="max-width: 18rem;">
-                            <img class="card-img" src="images/mel.svg" alt="Card image">
-                            <div class="card-img-overlay">
+                        <div class="card  col-12 col-md-6 col-lg-3" style="max-width: 18rem;">
+                            <img class="card-img" src="/images/mel.svg" alt="Card image">
+                            <div class="card-img-overlay text-light">
                                 <h2 class="card-title text-center">University of Melbourne</h2>
                             </div>
                         </div>
 
-                        <div class="card col-12 col-md-6 col-lg-3  text-light mb-3" data-aos="fade-up" style="max-width: 18rem;">
-                            <img class="card-img" src="images/tor.png"alt="Card image">
-                            <div class="card-img-overlay">
+                        <div class="card col-12 col-md-6 col-lg-3 " style="max-width: 18rem;">
+                            <img class="card-img" src="/images/tor.png" alt="Card image">
+                            <div class="card-img-overlay text-light">
                                 <h2 class="card-title text-center">University of Toronto</h2>
                             </div>
                         </div>
 
-                        <div class="card col-12 col-md-6 col-lg-3  text-light mb-3" data-aos="fade-up" style="max-width: 18rem;">
-                            <img class="card-img" src="images/mc.png" alt="Card image">
-                            <div class="card-img-overlay">    
+                        <div class="card col-12 col-md-6 col-lg-3 " style="max-width: 18rem;">
+                            <img class="card-img" src="/images/mc.png" alt="Card image">
+                            <div class="card-img-overlay text-light">    
                                 <h2 class="card-title text-center">MCGILL University</h2>
                             </div>
                         </div>
-
-                    </div>
-
+                       
+                        <!-- Abroad Button-->
+                        <div class="text-center">
+                            <a href="/consult.html" class="card-link btn btn-primary" role="button">
+                                Request Counselling
+                            </a>
+                        </div>
                 </div>
-                <div class="column col-12 col-md-12 col-lg-12 mt-5 column3">
-                    
-                    <div class="row">
-                        <h2 class="text-center" style="width: 100%;"><i class="fas fa-school"></i>  Our Services</h2>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-left">
-                            <div class="card-body">
-                                <img src="sc.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">SCHOLARSHIPS</h4>
-                                <p class="card-text">Our extensive scholarship help includes assessing eligibility criteria to guiding applicants in the right way and assist them.
-                                </p>
-                                <a href="" class="card-link">
-                                    <button class="btn btn-sm btn-outline-danger">Learn More</button>
-                                </a>
+
+            </section>
+
+            <!-- Services -->
+            <section id="services" class="services" data-aos="fade-up">
+
+                <div class="container row">
+
+                        <!-- Services Header -->
+                        <h2 class="text-center text-light mt-5 mb-5" style="width: 100%; z-index: 9;"><i class="fas fa-school"></i>&nbsp; Our Services</h2>
+
+                        <!-- Services Card*6 -->
+                        <div class="colu col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body bg-danger text-light">
+                                    <img src="/images/sc.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">SCHOLARSHIPS</h4>
+                                    <p class="card-text">Our extensive scholarship help includes assessing eligibility criteria to guiding applicants in the right way and assist them.
+                                    </p>
+                                    <a href="scholarships.html" class="card-link">
+                                        <button class="btn btn-sm btn-outline-light ">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3"data-aos="fade-up">
-                            <div class="card-body">
-                                <img src="sp.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">SPONSORSHIPS
-                                </h4>
-                                <p class="card-text">Evaluating the truthfulness of the application, opportunity of getting a fund/sponsor are provided to deserving candidates.
-                                </p>
-                                <a href="" class="card-link">
-                                    <button class="btn  btn-sm btn-outline-danger">Learn More</button>
-                                </a>
+                        <div class="colu col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <img src="/images/sp.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">SPONSORSHIPS
+                                    </h4>
+                                    <p class="card-text">Evaluating the truthfulness of the application, 
+                                        opportunity of getting a fund/sponsor are 
+                                        provided to deserving candidates.
+                                    </p>
+                                    <a href="scholarships.html" class="card-link">
+                                        <button class="btn  btn-sm btn-outline-danger">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-right">
-                            <div class="card-body">
-                                <img src="va.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">VISA ASSISTANCE
-                                </h4>
-                                <p class="card-text">We are very well updated about the dynamic rules and regulations in visa procedures, which results in elevated visa success rates.
-                                </p>
-                                <a href="" class="card-link">
-                                    <button class="btn  btn-sm btn-outline-danger">Learn More</button>
-                                </a>
+                        <div class="colu  col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <img src="/images/va.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">VISA ASSISTANCE
+                                    </h4>
+                                    <p class="card-text">We are very well updated about the dynamic rules and regulations in visa procedures, which results in elevated visa success rates.
+                                    </p>
+                                    <a href="visa.html" class="card-link">
+                                        <button class="btn  btn-sm btn-outline-danger">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3" data-aos="fade-left">
-                            <div class="card-body">
-                                <img src="bl.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">BANK LOANS
-                                </h4>
-                                <p class="card-text">When it comes to bank loan assistance, our services are extensive that it includes the documentation and communication.
-                                </p>
-                                <a href="" class="card-link">
-                                    <button class="btn  btn-sm btn-outline-danger">Learn More</button>
-                                </a>
+                        <div class="colu col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <img src="/images/bl.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">BANK LOANS
+                                    </h4>
+                                    <p class="card-text">When it comes to bank loan assistance, our services are extensive that it includes the documentation and communication.
+                                    </p>
+                                    <a href="loans.html" class="card-link">
+                                        <button class="btn  btn-sm btn-outline-danger">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3"data-aos="fade-down">
-                            <div class="card-body">
-                                <img src="mc.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">MEDICAL CLEARANCE
-                                </h4>
-                                <p class="card-text">Medical fitness certificate is compulsory and it should be provided by a doctor from a medical clinic, hospital or doctor’s office
-                                </p>
-                                <a href="" class="card-link">
-                                    <button class="btn  btn-sm btn-outline-danger">Learn More</button>
-                                </a>
+                        <div class="colu col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <img src="/images/mca.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">MEDICAL CLEARANCE
+                                    </h4>
+                                    <p class="card-text">Medical fitness certificate is compulsory and it should be provided by a doctor from a medical clinic, hospital or doctor’s office
+                                    </p>
+                                    <a href="med.html" class="card-link">
+                                        <button class="btn  btn-sm btn-outline-danger">Learn More</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card bg-light col-12 col-sm-6 col-md-4 col-lg-3"data-aos="fade-right" id="telSent">
-                            <div class="card-body">
-                                <img src="cb.png" alt="" width="30">
-                                <h4 class="caard-title mt-3">REQUEST A CALL BACK.
-                                </h4>
-                                <p class="card-text">Just submit your details and we’ll be in touch shortly.
-                                </p>
-                                <input type="tel" name="tel" placeholder="">
-                                <a href="" class="card-link">
-                                    <button class="btn  btn-sm btn-outline-dark sent-btn" >SENT</button>
-                                </a>
+                        <div class="colu col-12 col-sm-12 col-md-6 col-lg-4">
+                            <div class="card" id="telSent">
+                                <div class="card-body bg-danger text-light">
+                                    <img src="/images/cb.png" alt="" width="30">
+                                    <h4 class="card-title mt-3">REQUEST A CALL BACK.
+                                    </h4>
+                                    <p class="card-text">Just submit your details and we’ll be in touch shortly.
+                                    </p>
+                                    <input type="tel" name="tel" placeholder="">
+                                    <a href="" class="card-link">
+                                        <button class="btn  btn-sm btn-outline-light sent-btn" >SENT</button>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
                 </div>
-                <div class="column col-12 col-md-12 col-lg-12 aboutUs bg-dark">
-                    <div class="about1 row">
-                        <img class="col-sm-12 col-md-6 col-lg-4 order-first" src="images/about1.jpg" alt="">
+
+            </section>
+
+            <!-- Parallax -->
+            <section id="parallax">
+
+                <!-- Parallax Header -->
+                <div class="parallax text-center text-light mt-5 mb-5">
+                    <h2>LearnLed Consultants Offers <br> Unparallel Student Counselling & Guidance</h2>
+                </div>
+            </section>
+
+            
+            <!-- About Us -->
+            <section id="aboutUs" class="aboutUs">
+
+                <div class="container row mt-5">
+
+                    <!-- About Us Content1-->
+                    <div class="about1 row mt-5">
+                        <img class="col-sm-12 col-md-6 col-lg-5 order-first" src="images/about1.jpg" alt="" data-aos="zoom-in">
                         <div class="content col-sm-12 col-md-6 col-lg-6 order-last">
                             <h3>What We Do ?</h3>
                             <p>We make every possible effort to provide our clients with the best mentoring experience. In a very short span of less than a decade, we have been able to cater to the needs of many thousands of students and get the honour of being fondly remembered by all of them for the quality that they experienced with us.</p>
                         </div>
                     </div>
+                    <!-- About Us Content2-->
                     <hr class="my-4 bg-light">
                     <div class="about2 row">
-                        <img class="col-sm-12 col-md-4 col-lg-5 order-last"  src="images/about2.jpg" alt="" width="100%">
+                        <img class="col-sm-12 col-md-6 col-lg-5 order-last"  src="images/about2.jpg" alt="" width="100%" data-aos="zoom-in">
                         <div class="content col-sm-12 col-md-6 col-lg-6 order-first">
                             <h3>WHY CHOOSE US?</h3>
                             <div class="points mt-5">
@@ -209,29 +265,163 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
+
+            </section>
+
+            <!--Contact Us -->
+            <section id="contactUs" class="contactUs">
+
+                    <section id="contact" class="contact">
+
+                        <div class="container" data-aos="fade-up">
+
+                            <!--Contact Us Header -->
+                            <div class="section-title">
+                                <h2 class="text-center mt-5 ">Contact Us</h2>
+                            </div>
+
+                            <!--Contact Us Content -->
+                            <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+                                <!--Contact Us Details -->
+                                <div class="col-lg-6 mt-3">
+
+                                    <div class="row">
+
+                                        <!--Contact Us Details-Card*3-->
+                                        <div class="col-md-12">
+                                            <div class="info-box">
+                                                <i class="fas fa-map"></i>
+                                                <h3>Our Address</h3>
+                                                <p>Kottakadavu, Calicut Road, Kerala 673328</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="info-box mt-4">
+                                            <i class="fas fa-envelope"></i>
+                                            <h3>Email Us</h3>
+                                            <a href="mailto:contactlearnled@gmail.com" style="text-decoration: none; color: inherit;">
+                                                contactlearnled@gmail.com
+                                            </a>
+                                            <br>
+                                            <a href="mailto:mail@uniwaysglobal.com" style="text-decoration: none; color: inherit;">
+                                                mail@uniwaysglobal.com
+                                            </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="info-box mt-4">
+                                            <i class="fas fa-phone"></i>
+                                            <h3>Call Us</h3>
+                                            <a href="tel:9744283638" style="text-decoration: none; color: inherit;">
+                                                +91 9744283638
+                                            </a>
+                                            <br>
+                                            <a href="tel:9048844709" style="text-decoration: none; color: inherit;">
+                                                +91 9048844709
+                                            </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <!--Contact Us Form -->
+                                <div class="col-lg-6 mt-3">
+                                    <form  method="post" role="form" class="form">
+                                        <div class="row">
+                                            <div class="col form-group">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                                            </div>
+                                            <div class="col form-group">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit">Send Message</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+            </section>
+
+        </main>
+<!--End Main-->
+
+<!-- Footer -->
+        <footer class="footer page-footer">
+
+            <div class="container">
+                <div class="row">
+
+                    <!-- Footer Top -->
+                    <div class="rowf col-12 mt-4">
+                        <div class="row">
+
+                            <!-- Footer Top Header -->
+                            <h2 class="col-12 col-sm-12 col-md-6 col-lg-6">Co-Partner : <a href="http://www.uniwaysglobal.com/" target="0"> Uniways Global Pvt Ltd</a></h2>
+
+                            <!-- Footer Top Links -->
+                            <div class="footer-social  col-12 col-sm-12 col-md-6 col-lg-6">
+                                
+                                <!-- Facebook -->
+                                    <a class="fb-ic" href="https://www.facebook.com/pages/category/Tour-Agency/Melandra-Holidays-385683788742489/" target="0">
+                                        <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                    <!-- Twitter -->
+                                    <a class="tw-ic">
+                                        <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                    <!-- Google +-->
+                                    <a class="gplus-ic">
+                                        <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+                                    <!--Instagram-->
+                                    <a class="ins-ic" href="https://www.instagram.com/learnled_consultants/" target="0">
+                                        <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+                                    </a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Footer Bottom -->
+                    <hr class="my-1">
+                    <div class="footer-copyright  col-12 text-center py-3">Copyright © 2021 
+                    </div>
+
+                </div>
+            </div>
             
-            </div>
-
-        </div>
-
-        <footer>
-            <div class="footer">
-                
-            </div>
         </footer>
+<!-- End Footer -->
 
-    </div>
-
+</div>
 
     <!--Boostrap Js-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <!--jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!--Animatn-->
+    <!--Animation AOS-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Default Script-->
-    <script src="js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
