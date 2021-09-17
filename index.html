@@ -208,10 +208,15 @@
                                     </h4>
                                     <p class="card-text">Just submit your details and we’ll be in touch shortly.
                                     </p>
-                                    <input type="tel" name="tel" placeholder="">
+                                    <form action="https://formsubmit.co/contactlearnled@gmail.com" method="POST">
+                                    <input type="tel" name="tel" placeholder="+91">
                                     <a href="" class="card-link">
-                                        <button class="btn  btn-sm btn-outline-light sent-btn" >SENT</button>
+                                        <input type="hidden" name="_autoresponse" value="Hey We'll contact you soon">
+                                        <input type="hidden" name="_captcha" value="false">
+                                        <input type="hidden" name="_next" value="https://bbff.netlify.app/index.html">
+                                        <button type="submit" class="btn  btn-sm btn-outline-light sent-btn" >SENT</button>
                                     </a>
+                                    </form>
                                 </div>
                             </div>
                         </div>
